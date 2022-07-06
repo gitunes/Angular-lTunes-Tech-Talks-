@@ -1,0 +1,13 @@
+<nav class="navbar bg-light">
+    <div class="w-100 d-flex align-items-center justify-content-end p-3 header__right--notification">
+        <button (click)="showNatification = !showNatification" type="button"
+            class="btn btn-primary position-relative me-3" id="show-notification">
+            <i class="fa-solid fa-cart-shopping me-3" id="show-notification-icon"></i>
+            <span *ngIf="(cartService.carts | async) as list" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                {{list.length}}
+            </span>
+        </button>
+        <app-natification (deleteItemEvent)="deleteItem($event)" (closeNatificationEvent)="showNatification=$event" *ngIf="showNatification">
+        </app-natification>
+    </div>
+</nav>

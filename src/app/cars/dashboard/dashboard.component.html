@@ -1,0 +1,18 @@
+<!-- <div *ngFor="let car of cars">
+
+</div> -->
+
+<div class="container mt-4 d-flex flex-wrap" style="justify-content: space-between;">
+    <div *ngFor="let car of cars">
+        <div class="card col-md-4" style="width: 18rem;">
+            <img [src]="car.img" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> {{car.model }} </h5>
+                <p class="card-text"> {{car.km }} </p>
+                <p class="card-text"> {{car.price }} </p>
+                <a (click)="openCarDetail(car.id)" class="btn btn-primary">Car Detail</a>
+                <a style="float: right;" (click)="addItem(car)" class="btn btn-primary">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+</div>

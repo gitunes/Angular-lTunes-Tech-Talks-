@@ -1,0 +1,56 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "color": "siyah",
+      "km": "1231231231",
+      "price": "100000",
+      "model": "Passat",
+      "img": "https://images.dod.com.tr/1388727_1_800x600.jpg"
+    },
+    {
+      "id": 2,
+      "color": "mavi",
+      "km": "45323",
+      "price": "200000",
+      "model": "Golf",
+      "img": "https://images.dod.com.tr/1388727_1_800x600.jpg"
+    },
+    {
+      "id": 3,
+      "color": "beyaz",
+      "km": "123123",
+      "price": "300000",
+      "model": "Golf",
+      "img": "https://images.dod.com.tr/1388727_1_800x600.jpg"
+    }
+  ],
+  "login": {
+    "userName": "dtech",
+    "email": "dtech",
+    "password": "123123"
+  },
+  "rez": [
+    {
+      "email": "asdas@f.com",
+      "tc": "123123",
+      "name": "aa",
+      "surname": "ss",
+      "id": 1
+    },
+    {
+      "email": "asdas@f.com",
+      "tc": "123123",
+      "name": "nasda",
+      "surname": "123123123",
+      "id": 2
+    },
+    {
+      "email": "asdas@f.com",
+      "tc": "22",
+      "name": "2",
+      "surname": "33",
+      "id": 3
+    }
+  ]
+}

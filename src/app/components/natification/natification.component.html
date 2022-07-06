@@ -1,0 +1,21 @@
+<div class="custom-notification__wrapper" ref="notificationContent">
+    <div class="w-100 d-flex align-items-center justify-content-end p-2">
+        <i class="fa-solid fa-xmark" (click)="close(false)" style="cursor: pointer"></i>
+    </div>
+    <div class="custom-notification__contents">
+        <div style="text-align: center;" *ngIf="(cartService.carts |async) as data">
+            <label *ngIf="!data.length"> Sepetiniz boş! </label>
+        </div>
+        <div *ngFor="let data of (cartService.carts |async);let i = index" class="custom-notification__contents--item">
+            <div class="d-flex justify-content-between p-2 w-100">
+                <div class="d-flex align-items-center">
+                    <img width="50" height="50" src="{{data.img}}" alt="car" class="me-2" />
+                </div>
+                <span style="align-self: center;"> Model: {{data.model}} </span>
+                <span style="align-self: center;"> Quantity: {{data.quantity +1}} </span>
+                <i (click)="deleteEvent(i,data)" class="fa-solid fa-circle-minus"
+                    style="cursor: pointer;align-self: center;"></i>
+            </div>
+        </div>
+    </div>
+</div>

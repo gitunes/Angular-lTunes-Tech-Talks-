@@ -1,0 +1,35 @@
+
+<div class="container mt-4 d-flex flex-wrap" style="justify-content: center;">
+    <div>
+        <div class="card row" style="width: 30rem;">
+            <img [src]="car?.img" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"> {{car?.model }} </h5>
+                <p class="card-text"> {{car.km }} </p>
+                <p class="card-text"> {{car.price }} </p>
+                <a routerLink="/cars" class="btn btn-primary">Home</a>
+                <a style="float: right;" (click)="addCart()" class="btn btn-primary">Add To Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="row">
+    <div class="col-12 mt-3">
+        <div class="card">
+            <div class="card-horizontal">
+                <div class="img-square-wrapper">
+                    <img class="" [src]="car?.img" alt="Card image cap">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">{{car?.model }}</h4>
+                    <p class="card-text"> {{car?.km }}</p>
+                    <p class="card-text"> {{car?.price | currency: "TRY":"₺":"2.2-2"}} </p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-primary">Car Detail</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->

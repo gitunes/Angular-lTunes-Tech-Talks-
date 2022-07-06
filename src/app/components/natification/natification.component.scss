@@ -1,0 +1,18 @@
+.custom-notification__wrapper {
+  cursor: default;
+  position: absolute;
+  width: 352px;
+  height: 165px;
+  right: 30px;
+  top: 58px;
+  background: #ffffff;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14), 0px 1px 18px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  font-family: "Inter";
+  font-style: normal;
+  z-index: 10;
+}
+.custom-notification__contents {
+  height: 130px;
+  overflow-y: auto;
+}
